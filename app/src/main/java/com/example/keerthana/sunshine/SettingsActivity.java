@@ -22,9 +22,9 @@ public class SettingsActivity extends PreferenceActivity implements Preference.O
         // For all preferences, attach an OnPreferenceChangeListener so the UI summary can be
         // updated when the preference changes.
         bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_location_key)));
-        ListPreference listPreference = (ListPreference) findPreference(getString(R.string.pref_temp_unit_key));
-        listPreference.setEntries(R.array.pref_temp_items);
-        listPreference.setEntryValues(R.array.pref_temp_values);
+        ListPreference listPreference = (ListPreference) findPreference(getString(R.string.pref_units_key));
+        listPreference.setEntries(R.array.pref_units_options);
+        listPreference.setEntryValues(R.array.pref_units_values);
         bindPreferenceSummaryToValue(listPreference);
     }
 
